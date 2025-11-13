@@ -8,9 +8,7 @@ httpx==0.26.0
 requests==2.31.0
 aiohttp==3.9.1
 
-# Data Processing
-pandas==2.1.4
-numpy==1.26.3
+# Data Processing (removed pandas/numpy for Python 3.13 compatibility)
 beautifulsoup4==4.12.3
 lxml==5.1.0
 
@@ -28,18 +26,15 @@ anthropic==0.19.2
 openai==1.10.0
 tiktoken==0.5.2
 
-# Scraping
-scrapy==2.11.0
-selenium==4.16.0
-playwright==1.40.0
+# Scraping (lightweight - removed scrapy/selenium/playwright)
+# Use httpx + beautifulsoup instead
 
-# SEO & Analytics
-google-api-python-client==2.115.0
+# SEO & Analytics (removed - optional)
+# google-api-python-client==2.115.0
 
-# Task Queue & Async
-celery==5.3.6
-redis==5.0.1
-asyncio==3.4.3
+# Task Queue (removed celery/redis - optional for now)
+# celery==5.3.6
+# redis==5.0.1
 
 # Utilities
 rich==13.7.0
